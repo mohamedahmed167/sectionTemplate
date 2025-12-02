@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="scroll-progress">
+      <span data-progress></span>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid bg-dark">
+        <div class="d-flex flex-column align-items-center">
+          <a class="navbar-brand ms-5 text-white d-block" href="#">cars</a>
+          <p
+            id="demo"
+            class="text-white ms-5"
+            style="font-size: 10px"
+            data-hero-tagline
+          >
+            premium cars & Bikes
+          </p>
+        </div>
+        <ul
+          class="navbar-nav position-absolute top-50 start-50 translate-middle"
+        >
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#"
+              >home</a
+            >
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#">Bikes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">contact</a>
+          </li>
+          <li class="nav-item dropdown"></li>
+        </ul>
+        <form class="d-flex align-items-center" role="content">
+          <i class="fa-solid fa-phone text-white me-1"></i
+          ><span class="text-white me-2">010000012</span>
+          <button class="btn contact-us bg-white" type="submit">
+            <i class="fa-solid fa-envelope"></i> contact us
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div
+      class="landing d-flex flex-column justify-content-center align-items-center text-white text-capitalize"
+    >
+      <h1>find your dream vehicle</h1>
+      <p class="bot">
+        discover the finest collection of premuim cars and it bikes in egypt
+        from luxry
+      </p>
+      <div class="d-flex justify-content-center align-items-center">
+        <a
+          class="text-capitalize ms-3 me-3 text-decoration-none btn btn-light"
+          href="buyNow.html"
+          >Buy now</a
+        >
+        <a class="text-capitalize text-decoration-none btn btn-light" href="#"
+          >browse biks</a
+        >
+      </div>
+      <div class="place">
+        <i
+          class="fa-solid fa-arrow-down d-flex justify-content-center align-items-center arrow"
+          data-scroll="premium"
+        ></i>
+      </div>
+    </div>
+    <div class="premium pb-5">
+      <div
+        class="text text-capitalize p-3 d-flex align-items-center flex-column"
+      >
+        <h2 class="">premium cars</h2>
+        <p>
+          explore our collection of premium cars from trusted brands from
+          compact city cars to egypt
+        </p>
+      </div>
+      <div
+        class="filter-controls d-flex justify-content-center flex-wrap gap-3 pb-4"
+        role="group"
+        aria-label="Filter premium cars"
+      >
+        <button
+          class="btn btn-outline-light text-capitalize active"
+          data-filter="all"
+          type="button"
+        >
+          all
+        </button>
+        <button
+          class="btn btn-outline-light text-capitalize"
+          data-filter="suzuki"
+          type="button"
+        >
+          suzuki
+        </button>
+        <button
+          class="btn btn-outline-light text-capitalize"
+          data-filter="kia"
+          type="button"
+        >
+          kia
+        </button>
+        <button
+          class="btn btn-outline-light text-capitalize"
+          data-filter="toyota"
+          type="button"
+        >
+          toyota
+        </button>
+      </div>
+      <div
+        class="row d-flex justify-content-center align-items-center p-5 g-4"
+        data-reveal
+      >
+        <div
+          class="col-lg-3 premium-card"
+          data-brand="suzuki"
+          data-name="Suzuki Alto VXR"
+          data-year="2024"
+          data-engine="1.0L"
+          data-fuel="Petrol"
+          data-price="$25,000"
+          data-img="/imgs/CarLed.jpeg"
+          data-description="Compact city hatchback with nimble handling and smart safety tech."
+        >
+          <div class="card" style="width: 18rem">
+            <img src="/imgs/CarLed.jpeg" class="card-img-top" alt="Suzuki Alto" />
+            <div class="card-body">
+              <h5 class="card-title">Suzuki Alto VXR</h5>
+              <p class="card-text">Year: 2024</p>
+              <p class="card-text">Engine: 1.0L</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $25,000</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test drive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 premium-card"
+          data-brand="kia"
+          data-name="KIA Sportage"
+          data-year="2024"
+          data-engine="2.0L"
+          data-fuel="Petrol"
+          data-price="$42,500"
+          data-img="/imgs/CarFromBeside.jpeg"
+          data-description="Feature-packed crossover with panoramic roof and advanced infotainment."
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="/imgs/CarFromBeside.jpeg"
+              class="card-img-top"
+              alt="KIA Sportage"
+            />
+            <div class="card-body">
+              <h5 class="card-title">KIA Sportage</h5>
+              <p class="card-text">Year: 2024</p>
+              <p class="card-text">Engine: 2.0L</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $42,500</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test drive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 premium-card"
+          data-brand="toyota"
+          data-name="Toyota Prado"
+          data-year="2024"
+          data-engine="3.0L"
+          data-fuel="Diesel"
+          data-price="$68,900"
+          data-img="/imgs/CarFromBehind.jpeg"
+          data-description="Luxury SUV tuned for long adventures with adaptive terrain control."
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="/imgs/CarFromBehind.jpeg"
+              class="card-img-top"
+              alt="Toyota Prado"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Toyota Prado</h5>
+              <p class="card-text">Year: 2024</p>
+              <p class="card-text">Engine: 3.0L</p>
+              <p class="card-text">Fuel: Diesel</p>
+              <p>Price: $68,900</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test drive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row d-flex justify-content-center align-items-center g-4"
+        data-reveal
+      >
+        <div
+          class="col-lg-3 premium-card"
+          data-brand="suzuki"
+          data-name="Suzuki Swift"
+          data-year="2025"
+          data-engine="1.2L"
+          data-fuel="Hybrid"
+          data-price="$29,500"
+          data-img="/imgs/CarLed.jpeg"
+          data-description="Sporty hatchback with hybrid efficiency and wireless CarPlay."
+        >
+          <div class="card" style="width: 18rem">
+            <img src="/imgs/CarLed.jpeg" class="card-img-top" alt="Suzuki Swift" />
+            <div class="card-body">
+              <h5 class="card-title">Suzuki Swift</h5>
+              <p class="card-text">Year: 2025</p>
+              <p class="card-text">Engine: 1.2L Hybrid</p>
+              <p class="card-text">Fuel: Hybrid</p>
+              <p>Price: $29,500</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test drive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 premium-card"
+          data-brand="kia"
+          data-name="KIA EV6"
+          data-year="2025"
+          data-engine="77 kWh"
+          data-fuel="Electric"
+          data-price="$55,400"
+          data-img="/imgs/CarFromBeside.jpeg"
+          data-description="Fully electric crossover with 500km range and ultra-fast charging."
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="/imgs/CarFromBeside.jpeg"
+              class="card-img-top"
+              alt="KIA EV6"
+            />
+            <div class="card-body">
+              <h5 class="card-title">KIA EV6</h5>
+              <p class="card-text">Year: 2025</p>
+              <p class="card-text">Battery: 77 kWh</p>
+              <p class="card-text">Powertrain: Electric</p>
+              <p>Price: $55,400</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test drive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 premium-card"
+          data-brand="toyota"
+          data-name="Toyota Crown"
+          data-year="2025"
+          data-engine="2.5L"
+          data-fuel="Hybrid"
+          data-price="$61,750"
+          data-img="/imgs/CarFromBehind.jpeg"
+          data-description="Flagship sedan with executive cabin and Lexus-grade comfort."
+        >
+          <div class="card" style="width: 18rem">
+            <img
+              src="/imgs/CarFromBehind.jpeg"
+              class="card-img-top"
+              alt="Toyota Crown"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Toyota Crown</h5>
+              <p class="card-text">Year: 2025</p>
+              <p class="card-text">Engine: 2.5L Hybrid</p>
+              <p class="card-text">Fuel: Hybrid</p>
+              <p>Price: $61,750</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test drive
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="moto pb-5" data-reveal>
+      <div
+        class="text d-flex align-items-center justify-content-center flex-column p-5"
+      >
+        <h2>motorcycles & Bikes</h2>
+        <p>
+          From economical daily commuters to high-performance sports bikes.
+          <br />
+          Find your perfect ride.
+        </p>
+      </div>
+      <div
+        class="row d-flex align-items-center justify-content-center pb-5 g-4"
+      >
+        <div
+          class="col-lg-3"
+          data-reveal
+          data-name="Honda CD 70"
+          data-year="2024"
+          data-engine="70cc"
+          data-fuel="Petrol"
+          data-price="$1,500"
+          data-img="/imgs/FrontMotorCycle.jpeg"
+          data-description="Iconic commuter bike with legendary fuel efficiency."
+        >
+          <div class="card imgcard" style="width: 18rem">
+            <img src="/imgs/FrontMotorCycle.jpeg" class="card-img" alt="Honda CD 70" />
+            <div class="card-body">
+              <h5 class="card-title">Honda CD 70</h5>
+              <p class="card-text">Year: 2024</p>
+              <p class="card-text">Engine: 70cc</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $1,500</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test ride
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3"
+          data-reveal
+          data-name="Yamaha YBR"
+          data-year="2024"
+          data-engine="125cc"
+          data-fuel="Petrol"
+          data-price="$2,400"
+          data-img="/imgs/FrontMotorCycle.jpeg"
+          data-description="Reliable daily rider with digital cluster and mono-shock comfort."
+        >
+          <div class="card imgcard" style="width: 18rem">
+            <img src="/imgs/FrontMotorCycle.jpeg" class="card-img" alt="Yamaha YBR" />
+            <div class="card-body">
+              <h5 class="card-title">Yamaha YBR</h5>
+              <p class="card-text">Year: 2024</p>
+              <p class="card-text">Engine: 125cc</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $2,400</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test ride
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3"
+          data-reveal
+          data-name="Kawasaki Ninja 300"
+          data-year="2024"
+          data-engine="296cc"
+          data-fuel="Petrol"
+          data-price="$4,900"
+          data-img="/imgs/BlackMotorCycle.jpeg"
+          data-description="Lightweight sport bike tuned for thrilling weekend rides."
+        >
+          <div class="card imgcard" style="width: 18rem">
+            <img
+              src="/imgs/BlackMotorCycle.jpeg"
+              class="card-img"
+              alt="Kawasaki Ninja 300"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kawasaki Ninja 300</h5>
+              <p class="card-text">Year: 2024</p>
+              <p class="card-text">Engine: 296cc</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $4,900</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test ride
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center g-4">
+        <div
+          class="col-lg-3"
+          data-reveal
+          data-name="BMW R nineT"
+          data-year="2025"
+          data-engine="1170cc"
+          data-fuel="Petrol"
+          data-price="$15,900"
+          data-img="/imgs/FrontMotorCycle.jpeg"
+          data-description="Classic roadster with modern boxer engine and customizable trims."
+        >
+          <div class="card imgcard" style="width: 18rem">
+            <img src="/imgs/FrontMotorCycle.jpeg" class="card-img" alt="BMW R nineT" />
+            <div class="card-body">
+              <h5 class="card-title">BMW R nineT</h5>
+              <p class="card-text">Year: 2025</p>
+              <p class="card-text">Engine: 1170cc</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $15,900</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test ride
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3"
+          data-reveal
+          data-name="Ducati Monster"
+          data-year="2025"
+          data-engine="937cc"
+          data-fuel="Petrol"
+          data-price="$12,300"
+          data-img="/imgs/FrontMotorCycle.jpeg"
+          data-description="Italian naked bike with cornering ABS and ride modes."
+        >
+          <div class="card imgcard" style="width: 18rem">
+            <img src="/imgs/FrontMotorCycle.jpeg" class="card-img" alt="Ducati Monster" />
+            <div class="card-body">
+              <h5 class="card-title">Ducati Monster</h5>
+              <p class="card-text">Year: 2025</p>
+              <p class="card-text">Engine: 937cc</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $12,300</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test ride
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3"
+          data-reveal
+          data-name="Harley-Davidson Nightster"
+          data-year="2025"
+          data-engine="975cc"
+          data-fuel="Petrol"
+          data-price="$13,800"
+          data-img="/imgs/BlackMotorCycle.jpeg"
+          data-description="Low-slung cruiser with liquid-cooled Revolution Max engine."
+        >
+          <div class="card imgcard" style="width: 18rem">
+            <img
+              src="/imgs/BlackMotorCycle.jpeg"
+              class="card-img"
+              alt="Harley-Davidson Nightster"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Harley-Davidson Nightster</h5>
+              <p class="card-text">Year: 2025</p>
+              <p class="card-text">Engine: 975cc</p>
+              <p class="card-text">Fuel: Petrol</p>
+              <p>Price: $13,800</p>
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  class="btn btn-dark text-capitalize"
+                  type="button"
+                  data-details-trigger
+                >
+                  view details
+                </button>
+                <button
+                  class="btn btn-outline-dark text-capitalize"
+                  type="button"
+                  data-testdrive-trigger
+                >
+                  book test ride
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="stats py-5" data-reveal>
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-3 col-sm-6">
+            <div
+              class="stat-box"
+              data-count-target="250"
+              data-count-suffix="+"
+            >
+              <span class="stat-number" data-count-value>0</span>
+              <p class="stat-label">cars sold</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              class="stat-box"
+              data-count-target="98"
+              data-count-suffix="%"
+            >
+              <span class="stat-number" data-count-value>0</span>
+              <p class="stat-label">happy customers</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              class="stat-box"
+              data-count-target="15"
+              data-count-suffix="+"
+            >
+              <span class="stat-number" data-count-value>0</span>
+              <p class="stat-label">partner brands</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div
+              class="stat-box"
+              data-count-target="24"
+              data-count-suffix="/7"
+            >
+              <span class="stat-number" data-count-value>0</span>
+              <p class="stat-label">support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="quick-inquiry btn btn-light" data-contact-toggle>
+      <i class="fa-solid fa-headset me-2"></i> quick inquiry
+    </button>
+    <div class="contact-drawer" data-contact-drawer>
+      <div class="drawer-header d-flex justify-content-between align-items-center">
+        <h4 class="mb-0 text-white">Need help choosing?</h4>
+        <button
+          class="btn-close btn-close-white"
+          aria-label="Close"
+          type="button"
+          data-contact-close
+        ></button>
+      </div>
+      <form class="drawer-form" data-contact-form>
+        <label class="text-white" for="drawerName">your name</label>
+        <input
+          id="drawerName"
+          type="text"
+          name="name"
+          placeholder="Full name"
+          required
+        />
+        <label class="text-white" for="drawerModel">preferred model</label>
+        <input
+          id="drawerModel"
+          type="text"
+          name="model"
+          placeholder="e.g. Toyota Prado"
+          required
+        />
+        <label class="text-white" for="drawerContact">contact method</label>
+        <input
+          id="drawerContact"
+          type="email"
+          name="contact"
+          placeholder="Email address"
+          required
+        />
+        <button class="btn btn-light w-100 text-uppercase" type="submit">
+          send request
+        </button>
+        <p class="drawer-feedback text-white-50" data-contact-feedback></p>
+      </form>
+    </div>
+    <div class="details-overlay" data-details-modal aria-hidden="true">
+      <div class="details-dialog" role="dialog" aria-modal="true">
+        <button
+          class="btn-close btn-close-white details-close"
+          type="button"
+          aria-label="Close"
+          data-details-close
+        ></button>
+        <div class="details-media">
+          <img src="" alt="Selected vehicle" data-details-image />
+        </div>
+        <div class="details-body">
+          <h3 class="text-white" data-details-title></h3>
+          <p class="text-white-50" data-details-description></p>
+          <ul class="list-unstyled text-white small">
+            <li>
+              <strong>Year:</strong>
+              <span data-details-year></span>
+            </li>
+            <li>
+              <strong>Engine:</strong>
+              <span data-details-engine></span>
+            </li>
+            <li>
+              <strong>Fuel:</strong>
+              <span data-details-fuel></span>
+            </li>
+            <li>
+              <strong>Price:</strong>
+              <span data-details-price></span>
+            </li>
+          </ul>
+          <button
+            class="btn btn-light text-uppercase w-100"
+            type="button"
+            data-details-testdrive
+          >
+            book test drive
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="toast-stack" data-toast-stack></div>
+    <div class="footer pt-5" data-reveal>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-3">
+          <h3 class="text-white">this is my website for buying carsh</h3>
+          <p class="text-white">
+            Your trusted partner for premium cars and motorcycles in Pakistan.
+            Quality vehicles, competitive prices, and excellent service.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="text-white text-capitalize">quick links</h2>
+          <ul class="list-unstyled">
+            <li class="ps-3 pb-1">
+              <a class="text-decoration-none text-white" href="#">Home</a>
+            </li>
+            <li class="ps-3 pb-1">
+              <a class="text-decoration-none text-white" href="#">Cars</a>
+            </li>
+            <li class="ps-3 pb-1">
+              <a class="text-decoration-none text-white" href="#">Bikes</a>
+            </li>
+            <li class="ps-3 pb-1">
+              <a class="text-decoration-none text-white" href="#">About</a>
+            </li>
+            <li class="ps-3 pb-1">
+              <a class="text-decoration-none text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="text-white">Contact Info</h2>
+          <ul class="text-white list-unstyled">
+            <li class="pb-1">
+              <i class="fa-solid fa-phone"></i> Phone: +201222318004
+            </li>
+            <li class="pb-1">
+              <i class="fa-solid fa-envelope"></i> Email: example@gmail.com
+            </li>
+            <li class="pb-1">
+              <i class="fa-solid fa-location-dot"></i> Address: 123 Main St,
+              Cairo, Egypt
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="text-white d-flex align-items-center justify-content-center flex-column"
+      >
+        <hr class="border border-white w-50 d-block" />
+        <p class="text-white">
+          &copy; <span data-current-year>2025</span> Mohamed ahmed. All rights
+          reserved.
+        </p>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/site.js" defer></script>
+  </body>
+</html>
